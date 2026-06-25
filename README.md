@@ -1,0 +1,1 @@
+# hamanogolfclub_presentation
