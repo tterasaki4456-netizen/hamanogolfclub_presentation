@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>脱炭素化補助金 ご提案スライド｜株式会社浜野ゴルフクラブ 御中</title>
+<meta name="description" content="株式会社浜野ゴルフクラブ 理事会・取締役会 決裁用。千葉県 脱炭素化補助金を活用した窓ガラスコーティング・キュービクル更新・省エネ診断の一体提案（音声ナレーション付き 自動送りスライド）。株式会社シスコムネット 担当：寺嵜忠弘。">
+<meta name="robots" content="noindex,nofollow">
+<style>
+  :root{
+    --gold:#ffe08a; --line:rgba(255,255,255,.22); --card:rgba(255,255,255,.10);
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  html,body{height:100%}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic",Meiryo,sans-serif;
+    background:#06160d; color:#fff; overflow:hidden; -webkit-font-smoothing:antialiased;
+  }
+  /* viewport wrapper + scaled 16:9 deck */
+  #wrap{position:fixed; inset:0; background:radial-gradient(120% 120% at 50% 20%,#11331e 0%,#06160d 75%); overflow:hidden}
+  #deck{position:absolute; left:50%; top:50%; width:1280px; height:720px;
+    transform:translate(-50%,-50%); transform-origin:center center;
+    border-radius:18px; overflow:hidden; box-shadow:0 24px 80px rgba(0,0,0,.55)}
+
+  .slide{position:absolute; inset:0; display:flex; flex-direction:column; justify-content:center;
+    padding:62px 76px 96px; opacity:0; visibility:hidden; transform:translateX(26px);
+    transition:opacity .55s ease, transform .55s ease;
+    background:linear-gradient(150deg,#1f7a3d 0%,#155c2d 55%,#0f3f20 100%);}
+  .slide.active{opacity:1; visibility:visible; transform:none}
+  .slide.alt{background:linear-gradient(150deg,#15592c 0%,#0f3f20 60%,#0a2e17 100%)}
+
+  .eyebrow{color:var(--gold); font-weight:800; letter-spacing:.05em; font-size:19px; margin-bottom:16px}
+  h1{font-size:50px; line-height:1.24; font-weight:900; margin-bottom:18px}
+  h2{font-size:40px; line-height:1.26; font-weight:900; margin-bottom:24px}
+  h2 .u{box-shadow:inset 0 -.32em 0 rgba(255,224,138,.28)}
+  .lead{font-size:22px; line-height:1.65; opacity:.97; max-width:780px}
+  .gold{color:var(--gold)}
+  .big{font-size:52px; font-weight:900; color:var(--gold); line-height:1.18}
+  .mono{font-variant-numeric:tabular-nums}
+
+  ul.b{list-style:none; display:flex; flex-direction:column; gap:16px; max-width:880px}
+  ul.b li{position:relative; padding-left:30px; font-size:24px; line-height:1.5}
+  ul.b li::before{content:""; position:absolute; left:0; top:.6em; width:12px; height:12px; border-radius:50%; background:var(--gold)}
+  ul.b li b{color:var(--gold)}
+
+  .cards{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:26px}
+  .card .tag{display:inline-block; font-size:13px; font-weight:800; color:#0f3f20; background:var(--gold); border-radius:8px; padding:3px 10px; margin-bottom:12px}
+  .card h3{font-size:23px; margin-bottom:9px; line-height:1.3}
+  .card p{font-size:16.5px; line-height:1.55; opacity:.95}
+  .card .price{margin-top:14px; font-weight:900; color:var(--gold); font-size:18px}
+
+  .facts{display:grid; grid-template-columns:repeat(2,1fr); gap:18px; max-width:840px}
+  .fact{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 24px}
+  .fact .k{font-size:16px; opacity:.85}
+  .fact .v{font-size:28px; font-weight:900; color:var(--gold); line-height:1.15; margin-top:4px}
+  .fact .v.sm{font-size:18px}
+
+  .numrow{display:flex; flex-wrap:wrap; gap:40px; align-items:flex-end; margin-bottom:18px}
+  .num .k{font-size:17px; opacity:.9}
+  .num .v{font-size:42px; font-weight:900; line-height:1.1}
+  .num .v.gold{color:var(--gold)}
+  .num .v small{font-size:.5em; font-weight:800}
+  .note{margin-top:18px; font-size:16px; opacity:.85}
+
+  .steps{display:flex; flex-direction:column; gap:13px; max-width:980px; counter-reset:s}
+  .steps li{list-style:none; position:relative; padding:14px 18px 14px 66px; background:var(--card); border:1px solid var(--line); border-radius:12px; font-size:21px; line-height:1.4}
+  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:14px; top:50%; transform:translateY(-50%); width:36px; height:36px; display:grid; place-items:center; background:var(--gold); color:#0f3f20; border-radius:50%; font-weight:900; font-size:18px}
+
+  .badgewrap{display:flex; flex-wrap:wrap; gap:12px; margin-top:22px}
+  .pill{background:rgba(255,255,255,.14); border:1px solid var(--line); border-radius:999px; padding:8px 16px; font-size:16px}
+  .sign{position:absolute; left:76px; bottom:56px; font-size:17px; opacity:.92}
+  .sign b{color:var(--gold)}
+  .saving{display:inline-flex; align-items:center; gap:8px; margin-top:18px; background:rgba(255,224,138,.16); border:1px solid rgba(255,224,138,.4); border-radius:10px; padding:10px 16px; font-size:19px}
+  .saving b{color:var(--gold)}
+
+  /* page number */
+  .pageno{position:absolute; right:30px; bottom:22px; font-size:14px; opacity:.6}
+
+  /* controls (viewport-fixed, not scaled) */
+  #prog{position:fixed; left:0; top:0; height:4px; background:var(--gold); width:0%; z-index:40; transition:width .25s linear}
+  #bar{position:fixed; left:0; right:0; bottom:0; z-index:30; display:flex; align-items:center; gap:12px; padding:10px 16px;
+    background:linear-gradient(0deg,rgba(0,0,0,.5),transparent); }
+  #bar button{appearance:none; border:1px solid var(--line); background:rgba(255,255,255,.14); color:#fff; border-radius:10px; padding:8px 12px; font-size:14px; cursor:pointer}
+  #bar button:hover{background:rgba(255,255,255,.26)}
+  #dots{display:flex; gap:7px; margin-left:auto}
+  #dots i{width:9px; height:9px; border-radius:50%; background:rgba(255,255,255,.35); cursor:pointer}
+  #dots i.on{background:var(--gold); transform:scale(1.25)}
+  #count{font-size:13px; opacity:.85; min-width:46px; text-align:right}
+  .ghost{font-size:12.5px; opacity:.85; text-decoration:underline; color:#fff}
+
+  /* start cover */
+  #cover{position:fixed; inset:0; z-index:50; display:grid; place-items:center; text-align:center;
+    background:radial-gradient(120% 120% at 50% 30%,#1f7a3d 0%,#0f3f20 70%,#08240f 100%)}
+  #cover .box{max-width:560px; padding:40px 28px}
+  #cover .ey{color:var(--gold); font-weight:800; letter-spacing:.05em; margin-bottom:16px; font-size:clamp(13px,2.2vw,17px)}
+  #cover h1{font-size:clamp(26px,6vw,52px); line-height:1.25}
+  #cover p{opacity:.95; margin:18px 0 30px; font-size:clamp(14px,2.5vw,20px); line-height:1.7}
+  #play{font-size:clamp(16px,3vw,22px); font-weight:800; color:#0f3f20; background:var(--gold);
+    border:0; border-radius:14px; padding:14px 30px; cursor:pointer}
+  #play:hover{filter:brightness(1.05)}
+  #cover .mute{display:block; margin-top:20px}
+  #cover .mute a{color:#fff; opacity:.85; text-decoration:underline; font-size:14px; cursor:pointer}
+</style>
+</head>
+<body>
+
+<div id="prog"></div>
+
+<div id="wrap">
+  <div id="deck">
+
+    <!-- 1 -->
+    <section class="slide" data-audio="audio/01.mp3" data-sec="20">
+      <div class="eyebrow">理事会・取締役会 決裁用ご提案</div>
+      <h1>株式会社浜野ゴルフクラブ 御中<br><span class="gold">脱炭素化補助金</span>で、設備更新と省エネを“まとめて”。</h1>
+      <p class="lead">窓ガラスコーティング・キュービクル更新・省エネ診断を、千葉県の補助金で一体に。御見積はご提示済み、残るは申請のみです。</p>
+      <div class="sign">株式会社シスコムネット ／ 担当：<b>寺嵜忠弘</b></div>
+      <div class="pageno">1 / 7</div>
+    </section>
+
+    <!-- 2 -->
+    <section class="slide alt" data-audio="audio/02.mp3" data-sec="20">
+      <div class="eyebrow">いまの課題</div>
+      <h2><span class="u">設備の老朽化と、暑さ・寒さ・電気代</span></h2>
+      <ul class="b">
+        <li><b>キュービクル（高圧受変電設備）の老朽化</b>。更新が必要な時期です。</li>
+        <li>夏の暑さ・冬の寒さ・<b>強い日差し</b>で空調負荷が大きく、内装も傷む。</li>
+        <li>設備更新と省エネを<b>別々にやると割高</b>。補助金でまとめる方が有利。</li>
+      </ul>
+      <div class="saving">⚡ キュービクル更新は<b>老朽対策として必須</b>。さらに<b>高効率化で電気代の削減</b>にもつながります。</div>
+      <div class="pageno">2 / 7</div>
+    </section>
+
+    <!-- 3 -->
+    <section class="slide" data-audio="audio/03.mp3" data-sec="27">
+      <div class="eyebrow">ご提案の内容</div>
+      <h2>補助金でまとめて進める <span class="gold">3つの施策</span></h2>
+      <div class="cards">
+        <div class="card">
+          <span class="tag">① 省エネ（建物）</span>
+          <h3>窓ガラスコーティング</h3>
+          <p>IRUVシールドSP 計465㎡。暑さ寒さ対策＋<b>UV99%カット</b>で空調負荷と内装の傷みを軽減。</p>
+          <div class="price">御見積 6,138,000円（税込）</div>
+        </div>
+        <div class="card">
+          <span class="tag">② 設備更新＋省エネ</span>
+          <h3>キュービクル更新</h3>
+          <p>老朽更新は<b>必須</b>。<b>高効率変圧器 Super-TR3 ×3台</b>で待機損失を抑え、<b>電気代の削減</b>にも。</p>
+          <div class="price">御見積 39,600,000円（税込）</div>
+        </div>
+        <div class="card">
+          <span class="tag">③ 前提（完了済）</span>
+          <h3>省エネ診断</h3>
+          <p>令和7年度に<b>受診済</b>。補助率1/2の上位枠を狙う鍵になります。</p>
+          <div class="price">R7 受診完了</div>
+        </div>
+      </div>
+      <div class="pageno">3 / 7</div>
+    </section>
+
+    <!-- 4 -->
+    <section class="slide alt" data-audio="audio/04.mp3" data-sec="22">
+      <div class="eyebrow">活用する制度</div>
+      <h2>令和8年度 千葉県 業務用設備等<br>脱炭素化促進事業補助金</h2>
+      <div class="facts">
+        <div class="fact"><div class="k">補助率</div><div class="v">対象経費の 1/2</div></div>
+        <div class="fact"><div class="k">補助上限</div><div class="v">1,000万円</div></div>
+        <div class="fact"><div class="k">申請締切</div><div class="v">R8.10.7（水）</div></div>
+        <div class="fact"><div class="k">主な要件</div><div class="v sm">中小事業者／CO2CO2スマート宣言／省エネ診断</div></div>
+      </div>
+      <div class="note">※ 区分・要件は最新の募集要領を一次情報で確認のうえ申請します。</div>
+      <div class="pageno">4 / 7</div>
+    </section>
+
+    <!-- 5 -->
+    <section class="slide" data-audio="audio/05.mp3" data-sec="30">
+      <div class="eyebrow">投資と自己負担（御見積ベース・千葉県審査次第）</div>
+      <h2>補助金で、自己負担はこう変わる</h2>
+      <div class="numrow">
+        <div class="num"><div class="k">投資総額（税込）</div><div class="v mono">4,573.8<small>万円</small></div></div>
+        <div class="num"><div class="k">補助金（確実ライン）</div><div class="v gold mono">739<small>万円</small></div></div>
+        <div class="num"><div class="k">補助金（最大・狙い）</div><div class="v gold mono">上限1,000<small>万円</small></div></div>
+      </div>
+      <ul class="b">
+        <li><b>確実ライン</b>：対象経費 <b>1,478万円</b>（ｷｭｰﾋﾞｸﾙ変圧器920万＋窓558万）→ 補助 <b>739万円</b></li>
+        <li><b>最大・狙い</b>：対象経費 <b>約2,558万円</b>（ｷｭｰﾋﾞｸﾙ約2,000万＋窓558万）→ <b>上限1,000万円</b></li>
+        <li>実質自己負担：<b>約3,835万 〜 約3,574万円</b></li>
+      </ul>
+      <div class="note">※ 補助額・対象範囲は千葉県の審査で確定します（断定ではありません）。</div>
+      <div class="pageno">5 / 7</div>
+    </section>
+
+    <!-- 6 -->
+    <section class="slide alt" data-audio="audio/06.mp3" data-sec="24">
+      <div class="eyebrow">これからの段取り</div>
+      <h2>決裁 → 申請 → 交付決定 → 着工</h2>
+      <ol class="steps">
+        <li>本日：理事会・取締役会で<b>「申請着手」をご決裁</b></li>
+        <li>CO2CO2スマート宣言 事業所登録（未登録の場合）</li>
+        <li>申請書類の作成（事業計画・省エネ効果・CO₂削減量）</li>
+        <li><b>令和8年10月7日まで</b>に千葉県へ交付申請</li>
+        <li>交付決定 → 契約・発注 → 着工 → 実績報告 → 補助金受領</li>
+      </ol>
+      <div class="note">※ 交付決定の前に契約・着工すると補助対象外。順序を厳守します。</div>
+      <div class="pageno">6 / 7</div>
+    </section>
+
+    <!-- 7 -->
+    <section class="slide" data-audio="audio/07.mp3" data-sec="20">
+      <div class="eyebrow">ご決裁のお願い</div>
+      <h2>準備は整っています。</h2>
+      <p class="lead">省エネ診断は完了、消防の事前確認も済。御見積もご提示済みです。</p>
+      <div class="big" style="margin:18px 0">御見積どおり実施し、千葉県補助金へ<span style="color:#fff">申請する</span>ご承認を。</div>
+      <div class="badgewrap">
+        <span class="pill">申請締切 R8.10.7（水）</span>
+        <span class="pill">早めのご決裁が安全です</span>
+      </div>
+      <div class="sign">株式会社シスコムネット ／ 担当：<b>寺嵜忠弘</b></div>
+      <div class="pageno">7 / 7</div>
+    </section>
+
+  </div>
+</div>
+
+<!-- controls -->
+<div id="bar">
+  <button id="b-prev" title="前へ（←）">◀ 前</button>
+  <button id="b-toggle" title="再生／一時停止（Space）">⏸ 一時停止</button>
+  <button id="b-next" title="次へ（→）">次 ▶</button>
+  <a class="ghost" href="document.html" target="_blank" rel="noopener">📄 詳細資料</a>
+  <div id="dots"></div>
+  <div id="count">1 / 7</div>
+</div>
+
+<!-- start cover -->
+<div id="cover">
+  <div class="box">
+    <div class="ey">理事会・取締役会 決裁用ご提案（音声ナレーション付き）</div>
+    <h1>株式会社浜野ゴルフクラブ 御中</h1>
+    <p>ナナミの音声に合わせて、スライドが自動で進みます。<br>音が出ます。音量をご確認のうえ、再生してください。</p>
+    <button id="play">▶ スライドを再生（自動送り）</button>
+    <span class="mute"><a id="nosound">音声なしで自動再生する</a></span>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ----- fit 16:9 deck to viewport -----
+  var deck = document.getElementById('deck');
+  function fit(){
+    var vw = window.innerWidth, vh = window.innerHeight;
+    var s = Math.min(vw/1280, vh/720);
+    deck.style.transform = 'translate(-50%,-50%) scale('+s+')';
+  }
+  window.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', fit);
+  fit();
+
+  // ----- slideshow -----
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var dotsWrap = document.getElementById('dots');
+  var count = document.getElementById('count');
+  var prog = document.getElementById('prog');
+  var btnToggle = document.getElementById('b-toggle');
+  var cover = document.getElementById('cover');
+  var player = new Audio(); player.preload = 'auto';
+  var idx = 0, playing = false, useAudio = true, fbTimer = null, progTimer = null, t0 = 0, dur = 0;
+
+  slides.forEach(function(_,i){
+    var d = document.createElement('i');
+    d.addEventListener('click', function(){ go(i, true); });
+    dotsWrap.appendChild(d);
+  });
+  var dots = Array.prototype.slice.call(dotsWrap.children);
+
+  function render(){
+    slides.forEach(function(s,i){ s.classList.toggle('active', i===idx); });
+    dots.forEach(function(d,i){ d.classList.toggle('on', i===idx); });
+    count.textContent = (idx+1)+' / '+slides.length;
+  }
+  function clearTimers(){
+    if(fbTimer){ clearTimeout(fbTimer); fbTimer=null; }
+    if(progTimer){ cancelAnimationFrame(progTimer); progTimer=null; }
+  }
+  function runProgress(seconds){
+    t0 = performance.now(); dur = seconds*1000;
+    function step(now){
+      var p = Math.min(100, (now - t0)/dur*100);
+      prog.style.width = p.toFixed(2)+'%';
+      if(p < 100 && playing){ progTimer = requestAnimationFrame(step); }
+    }
+    prog.style.width='0%'; progTimer = requestAnimationFrame(step);
+  }
+  function playCurrent(){
+    clearTimers();
+    var sec = parseFloat(slides[idx].getAttribute('data-sec')) || 18;
+    if(useAudio){
+      player.src = slides[idx].getAttribute('data-audio');
+      player.currentTime = 0;
+      var pr = player.play();
+      if(pr && pr.catch){
+        pr.then(function(){
+          runProgress(isFinite(player.duration) && player.duration>0 ? player.duration : sec);
+        }).catch(function(){
+          runProgress(sec); fbTimer = setTimeout(function(){ next(true); }, sec*1000);
+        });
+      }
+    } else {
+      runProgress(sec); fbTimer = setTimeout(function(){ next(true); }, sec*1000);
+    }
+  }
+  player.addEventListener('loadedmetadata', function(){
+    if(playing && useAudio && isFinite(player.duration) && player.duration>0){ runProgress(player.duration); }
+  });
+  player.addEventListener('ended', function(){ if(playing) next(true); });
+
+  function go(i, manual){
+    idx = Math.max(0, Math.min(slides.length-1, i));
+    render();
+    if(playing){ playCurrent(); }
+    else if(manual){ prog.style.width='0%'; }
+  }
+  function next(){
+    if(idx < slides.length-1){ go(idx+1); }
+    else { playing=false; clearTimers(); prog.style.width='100%'; btnToggle.textContent='▶ 最初から'; }
+  }
+  function prev(){ go(idx-1, true); }
+
+  function start(){
+    cover.style.display='none';
+    playing=true; idx=0; render(); btnToggle.textContent='⏸ 一時停止'; playCurrent();
+  }
+
+  btnToggle.addEventListener('click', function(){
+    if(idx===slides.length-1 && !playing){ playing=true; idx=0; render(); btnToggle.textContent='⏸ 一時停止'; playCurrent(); return; }
+    playing = !playing;
+    if(playing){ btnToggle.textContent='⏸ 一時停止'; playCurrent(); }
+    else { btnToggle.textContent='▶ 再生'; if(useAudio){ player.pause(); } clearTimers(); }
+  });
+  document.getElementById('b-next').addEventListener('click', function(){ go(idx+1, true); });
+  document.getElementById('b-prev').addEventListener('click', prev);
+  document.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'){ go(idx+1, true); }
+    else if(e.key==='ArrowLeft'){ prev(); }
+    else if(e.key===' '){ e.preventDefault(); btnToggle.click(); }
+  });
+  document.getElementById('play').addEventListener('click', function(){ useAudio=true; start(); });
+  document.getElementById('nosound').addEventListener('click', function(){ useAudio=false; start(); });
+
+  render();
+})();
+</script>
+</body>
+</html>
